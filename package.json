@@ -1,0 +1,21 @@
+{
+  "name": "copl",
+  "version": "1.0.0",
+  "description": "The COPL Programing Languge",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CommanderGL/Copl.git"
+  },
+  "keywords": ["Programing Languge", "js", "javascript"],
+  "author": "CommanderGL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CommanderGL/Copl/issues"
+  },
+  "homepage": "https://github.com/CommanderGL/Copl#readme"
+}
