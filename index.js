@@ -1,7 +1,7 @@
 import fs from "fs"
 
 const fileData = fs.readFileSync("./project/main.copl").toString()
-const cmds = fileData.split(";")
+const cmds = fileData.split(";").filter(cmd => cmd != '')
 
 const TOKENS = [
     "js"
@@ -11,11 +11,9 @@ cmds.forEach(cmd => {
     let args = cmd.split(" ")
     if (TOKENS.includes(args[0])) {
         if (args[0] == "js") {
-            if (args.length > 2) {
-                console.error(`Too many args passed to 'js'`)
-                return
-            }
-            eval(args[1])
+            args = cmd.split(" ", 1)
+            console.log(args)
+            //eval(args[1])
         }
         return
     }
